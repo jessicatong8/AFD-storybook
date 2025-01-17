@@ -4,8 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AFD Storybook</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+      
+
+        @media only screen and (min-width: 0px) {
+            #spread {
+            display: flex;
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            }
+            
+            img {            
+            /* width: 50vw; */
+            border: solid 1px;
+            width: 100vw;
+            }
+        }
+
+        @media only screen and (min-width: 1000px) {
+            #spread {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            /* justify-content: space-around; */
+            }
+            img {            
+            border: solid 1px;
+            max-height: 100%;
+            width:auto;         
+            }
+        }
+
+        nav {
+            padding: 0.5em;
+            background-color: #4e75ba;
+        }
+/* 
+        @media (max-width: 600px) {
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        } */
+    </style>
+
+
 </head>
 <body>
-    <p>Testing</p>
+    <!-- <p>Testing</p> -->
+     <!-- <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+     </nav> -->
+    <div id="spread">
+        <img src="GenericPage.png">
+        <img src="GenericPage.png">
+    </div>
+
 </body>
 </html>
